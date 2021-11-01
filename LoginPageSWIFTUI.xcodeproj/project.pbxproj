@@ -11,6 +11,8 @@
 		EA3A29E8272FBA10001D8DD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3A29E7272FBA10001D8DD9 /* ContentView.swift */; };
 		EA3A29EA272FBA14001D8DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3A29E9272FBA14001D8DD9 /* Assets.xcassets */; };
 		EA3A29ED272FBA14001D8DD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3A29EC272FBA14001D8DD9 /* Preview Assets.xcassets */; };
+		EA3A29F5272FBBBC001D8DD9 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3A29F4272FBBBC001D8DD9 /* SignIn.swift */; };
+		EA3A29F7272FCD74001D8DD9 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3A29F6272FCD74001D8DD9 /* Signup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EA3A29E7272FBA10001D8DD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA3A29E9272FBA14001D8DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA3A29EC272FBA14001D8DD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA3A29F4272FBBBC001D8DD9 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		EA3A29F6272FCD74001D8DD9 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		EA3A29E4272FBA10001D8DD9 /* LoginPageSWIFTUI */ = {
 			isa = PBXGroup;
 			children = (
+				EA3A29F3272FBBA8001D8DD9 /* Views */,
 				EA3A29E5272FBA10001D8DD9 /* LoginPageSWIFTUIApp.swift */,
 				EA3A29E7272FBA10001D8DD9 /* ContentView.swift */,
 				EA3A29E9272FBA14001D8DD9 /* Assets.xcassets */,
@@ -65,6 +70,15 @@
 				EA3A29EC272FBA14001D8DD9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA3A29F3272FBBA8001D8DD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA3A29F4272FBBBC001D8DD9 /* SignIn.swift */,
+				EA3A29F6272FCD74001D8DD9 /* Signup.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3A29E8272FBA10001D8DD9 /* ContentView.swift in Sources */,
+				EA3A29F7272FCD74001D8DD9 /* Signup.swift in Sources */,
+				EA3A29F5272FBBBC001D8DD9 /* SignIn.swift in Sources */,
 				EA3A29E6272FBA10001D8DD9 /* LoginPageSWIFTUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +292,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

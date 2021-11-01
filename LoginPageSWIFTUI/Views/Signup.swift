@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Signup.swift
 //  LoginPageSWIFTUI
 //
 //  Created by Gulam Ali on 01/11/21.
@@ -7,18 +7,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Signup: View {
     
     @State var emaill = ""
     @State var passwordd = ""
-    @State var showSignUp = false
+    @State var confirmpasswordd = ""
     
     var body: some View {
-    
         VStack{
-
             Spacer()
-            Text("Sign In")
+            Text("Sign Up")
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(Color("dark"))
@@ -61,6 +59,23 @@ struct ContentView: View {
             }
             .padding(.top, 15)
             
+            //for confirm passsword
+            
+            VStack(alignment: .leading, spacing: 8.0) {
+                Text("Confirm Password")
+                    .fontWeight(.bold)
+                    .foregroundColor(.gray)
+                
+                SecureField("123456", text: $confirmpasswordd)
+                //increasing font size and text color
+                    .font(.system(size: 20.0, weight: .semibold, design: .default))
+                    .foregroundColor(Color("dark"))
+                    .padding(.top, 5)
+                
+                Divider()
+            }
+            .padding(.top, 15)
+            
             //forget password....
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                 Text("Forgot Password?")
@@ -72,9 +87,7 @@ struct ContentView: View {
             
             //Next button ...
             
-            Button(action: {
-                print("Next tapped")
-            }) {
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                 Image(systemName: "arrow.right")
                     .font(.system(size: 30, weight: .bold))
                     .foregroundColor(.white)
@@ -86,32 +99,31 @@ struct ContentView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.top, 10)
             
-           
+            
             //Not a member
             Spacer()
             HStack{
-                Text("Doesn't have account?")
+                Text("Already have account?")
                     .foregroundColor(Color("dark"))
                     .font(.system(size: 17.0, weight: .bold))
                     
                 Button(action: {
-                    print("signUp tapped")
-        
+                    print("SignIn tapped")
                 }) {
-                    Text("SignUp")
+                    Text("SignIn")
                         .font(.system(size: 17.0, weight: .bold))
+                        
                 }
                     
             }
             
         }
         .padding()
-        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Signup_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Signup()
     }
 }

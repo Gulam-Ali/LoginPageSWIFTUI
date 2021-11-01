@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SignIn.swift
 //  LoginPageSWIFTUI
 //
 //  Created by Gulam Ali on 01/11/21.
@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SignIn: View {
     
     @State var emaill = ""
     @State var passwordd = ""
     @State var showSignUp = false
+    
     
     var body: some View {
     
@@ -96,7 +97,6 @@ struct ContentView: View {
                     
                 Button(action: {
                     print("signUp tapped")
-        
                 }) {
                     Text("SignUp")
                         .font(.system(size: 17.0, weight: .bold))
@@ -110,8 +110,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SignIn_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SignIn()
     }
 }
